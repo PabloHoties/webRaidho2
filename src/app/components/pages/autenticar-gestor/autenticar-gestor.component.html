@@ -1,0 +1,25 @@
+<div class="d-flex justify-content-center align-items-center vh-100">
+    <div class="card shadow p-4" style="max-width: 400px; width: 100%">
+        <body style="text-align: center; display: flex; justify-content: center; align-items: center; margin-bottom: 20px;">
+            <div style="position: relative; display: inline-block;">
+                <img src="https://i.imgur.com/mJFRrwy.jpeg" alt="Imagem do exemplo" style="width: 50%; border-radius: 15px; box-shadow: 0 0 15px 5px rgba(2, 42, 129, 0.8);" />
+            </div>
+        </body>
+        <h4 class="text-center mb-4">Autenticação de Gestor</h4>
+        <form [formGroup]="form" (ngSubmit)="onSubmit()">
+            <div class="mb-3">
+                <label>Email de acesso:</label>
+                <input type="text" class="form-control" formControlName="email" />
+            </div>
+            <div class="mb-3">
+                <label>Senha de acesso:</label>
+                <input type="password" class="form-control" formControlName="senha" />
+            </div>
+            <button type="submit" class="btn btn-primary w-100">Entrar</button>
+        </form>
+    <div class="text-center mt-3">
+        <p class="mb-0">
+            Você é um funcionário? <a routerLink="/pages/autenticar-funcionario"> Entre aqui.</a>
+        </p>
+    </div>
+</div>

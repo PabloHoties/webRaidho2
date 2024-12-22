@@ -1,6 +1,7 @@
 import { CommonModule } from '@angular/common';
 import { HttpClient } from '@angular/common/http';
 import { Component } from '@angular/core';
+import { NavbarComponent } from "../../layout/navbar/navbar.component";
 
 export enum Operacao {
   EXPEDIENTE_INICIO = 'EXPEDIENTE_INICIO',
@@ -11,8 +12,9 @@ export enum Operacao {
 @Component({
   selector: 'app-historico',
   imports: [
-    CommonModule
-  ],
+    CommonModule,
+    NavbarComponent
+],
   templateUrl: './historico.component.html',
   styleUrl: './historico.component.css',
 })

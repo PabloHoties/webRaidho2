@@ -3,12 +3,13 @@ import { Component, OnInit, AfterViewInit } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 import { latLng, tileLayer, Map, Marker, Icon } from 'leaflet';
 import { CommonModule } from '@angular/common';
+import { NavbarComponent } from "../../layout/navbar/navbar.component";
 
 @Component({
   selector: 'app-monitorar-funcionarios',
   templateUrl: './monitorar-funcionarios.component.html',
   styleUrls: ['./monitorar-funcionarios.component.css'],
-  imports: [CommonModule]
+  imports: [CommonModule, NavbarComponent]
 })
 export class MonitorarFuncionariosComponent implements OnInit {
 
