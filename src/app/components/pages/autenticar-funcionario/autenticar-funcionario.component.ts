@@ -28,6 +28,7 @@ export class AutenticarFuncionarioComponent {
           location.href = '/pages/bater-ponto';
         },
         error: (e) => {
+          alert('Email ou senha informados estão inválidos.');
           console.log(e.error);
         }
       })

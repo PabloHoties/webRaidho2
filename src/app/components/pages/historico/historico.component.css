@@ -1,0 +1,27 @@
+.table-container {
+    position: relative;
+    max-width: 370px;
+    overflow-x: auto; /* Permite rolagem horizontal, se necessário */
+    margin: 0 auto; /* Centraliza a tabela */
+  }
+  
+  .table {
+    width: 100%; /* Garante que a tabela ocupe todo o espaço disponível */
+  }
+  
+  .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.2); /* Sombreamento para o efeito de overlay */
+    display: none; /* Inicialmente oculto */
+    z-index: 10; /* Coloca a sobreposição sobre a tabela */
+  }
+  
+  /* Se você precisar exibir a sobreposição, altere a visibilidade do .overlay */
+  .table-container:hover .overlay {
+    display: block;
+  }
+  

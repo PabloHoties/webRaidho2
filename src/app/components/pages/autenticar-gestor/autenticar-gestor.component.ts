@@ -28,6 +28,7 @@ export class AutenticarGestorComponent {
           location.href = '/pages/monitorar-funcionarios';
         },
         error: (e) => {
+          alert('Email ou senha informados estão inválidos.');
           console.log(e.error);
         }
       })
